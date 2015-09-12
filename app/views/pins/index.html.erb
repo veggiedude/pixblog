@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pins</h1>
+
+<table cellpadding="3" cellspacing="5">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pins.each do |pin| %>
+      <tr>
+        <td><%= pin.description %></td>
+        <td><%= link_to 'Show', pin, class:'btn btn-success' %></td>
+        <td><%= link_to 'Edit', edit_pin_path(pin), class:'btn btn-primary' %></td>
+        <td><%= link_to 'Destroy', pin, class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <tr><td colspan="4"><hr></td></tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pin', new_pin_path %>
