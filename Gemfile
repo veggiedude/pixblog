@@ -18,6 +18,8 @@ gem 'devise', '~> 3.5.2'
 gem 'sass-rails', '~> 5.0'
 # Use paperclip for image uploads
 gem 'paperclip', '~> 4.3.0'
+# Use Amazon S3 for image storage
+gem 'aws-sdk', '~> 2.1.19'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
