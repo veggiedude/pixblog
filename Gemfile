@@ -23,6 +23,8 @@ gem 'aws-sdk', '~> 2.1.19'
 # Use masonry-rails to tile images on page
 gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4' 
+gem 'will_paginate', '~> 3.0.7'
+gem 'will_paginate-bootstrap', '~> 1.0.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
