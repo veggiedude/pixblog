@@ -1,32 +1,19 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Pins</h1>
-
-<table cellpadding="3" cellspacing="5">
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @pins.each do |pin| %>
-      <tr>
-        <td><%= image_tag pin.image.url(:medium) %></td>
-        <td><%= pin.description %></td>
-        <td><%= link_to 'Show', pin, class:'btn btn-success' %></td>
+<div id="pins" class="transitions-enabled">
+<% @pins.each do |pin| %>
+	<div class="box">
+		<div class="panel panel-default">
+      <%= link_to image_tag(pin.image.url(:medium)), pin %><br/>
+      <div class="panel-body">
+      <%= pin.description %><br/>
+      </div>
         <% if pin.user == current_user %>
-        <td><%= link_to 'Edit', edit_pin_path(pin), class:'btn btn-primary' %></td>
-        <td><%= link_to 'Destroy', pin, class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <div class="panel-footer">
+        <%= link_to 'Edit', edit_pin_path(pin), class:'btn btn-primary' %><br/>
+        <td><%= link_to 'Destroy', pin, class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+        </div>
         <% end %>
-      </tr>
-      <tr><td colspan="4"><hr></td></tr>
+        </div>
+		</div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Pin', new_pin_path %>
+	</div>
+</div>

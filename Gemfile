@@ -20,6 +20,9 @@ gem 'sass-rails', '~> 5.0'
 gem 'paperclip', '~> 4.3.0'
 # Use Amazon S3 for image storage
 gem 'aws-sdk', '~> 2.1.19'
+# Use masonry-rails to tile images on page
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.4' 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
