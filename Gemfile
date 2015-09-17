@@ -19,7 +19,7 @@ gem 'sass-rails', '~> 5.0'
 # Use paperclip for image uploads
 gem 'paperclip', '~> 4.3.0'
 # Use Amazon S3 for image storage
-gem 'aws-sdk', '~> 2.1.19'
+gem 'aws-sdk', '~> 2.1.20'
 # Use masonry-rails to tile images on page
 gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4' 
