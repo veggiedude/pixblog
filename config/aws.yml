@@ -1,6 +1,5 @@
 development:
- access_key_id: AKIAIZ2K6CPWMFS6VNOA
- secret_access_key: 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
+  <<: *defaults
 
 production:
  access_key_id: AKIAIS36AKWKU44P5WTQ
