@@ -1,6 +1,7 @@
 development:
-  <<: *defaults
+ access_key_id: AWS_ACCESS_KEY_ID
+ secret_access_key: AWS_SECRET_ACCESS_KEY
 
 production:
- access_key_id: AKIAIS36AKWKU44P5WTQ
- secret_access_key: 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
+ access_key_id: AWS_ACCESS_KEY_ID
+ secret_access_key: AWS_SECRET_ACCESS_KEY
